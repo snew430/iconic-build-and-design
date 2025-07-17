@@ -1,0 +1,13 @@
+.banner {
+  h2 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 30%;
+    padding: 2rem;
+  }
+  img {
+    filter: brightness(50%);
+    z-index: -1;
+  }
+}

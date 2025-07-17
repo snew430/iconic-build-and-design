@@ -1,0 +1,17 @@
+@use '../../constants.scss';
+
+footer {
+  background-color: constants.$primary-color;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: 10rem;
+  }
+  .social-logos {
+    display: flex;
+    color: white;
+    gap: 1rem;
+    padding: 2rem;
+  }
+}

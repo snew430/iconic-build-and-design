@@ -1,0 +1,17 @@
+@use '../../constants.scss';
+
+header {
+  position: sticky;
+  background-color: constants.$primary-color;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  a {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    color: white;
+  }
+}
