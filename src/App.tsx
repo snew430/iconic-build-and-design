@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from 'react-router';
-import './App.css';
-import './reset.css';
+import './reset.scss';
+import './App.scss';
 import React from 'react';
 import { Navigation, Header, Footer } from './components';
 import { Home, About, Contact } from './pages';
