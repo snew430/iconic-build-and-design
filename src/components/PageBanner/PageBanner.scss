@@ -1,0 +1,20 @@
+@use '../../constants.scss';
+
+.banner {
+  background-color: constants.$primary-color;
+  .banner-text {
+    position: absolute;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    top: 30%;
+    padding: 2rem;
+    width: 50%;
+  }
+  img {
+    filter: brightness(50%);
+    z-index: -1;
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}

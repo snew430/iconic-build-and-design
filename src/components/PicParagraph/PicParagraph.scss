@@ -1,29 +1,24 @@
+@use '../../constants.scss';
+
 .pic-paragraph {
-  margin: 2rem;
+  //   margin: 2rem;
   padding: 4rem;
   display: flex;
   gap: 2rem;
   align-items: center;
-  border: 0.2rem black;
-  border-top: solid;
-  border-bottom: solid;
-  width: 100%;
-  //   height: 15rem;
-  .circle {
-    border-radius: 50%;
-    height: 50%;
-    width: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  //   border: 0.1rem constants.$black;
+  //   border-top: solid;
+  //   border-bottom: solid;
+
+  &.trailing {
+    flex-direction: row-reverse;
+    background-color: constants.$primary-color;
+    color: constants.$white;
   }
   .pic {
-    // height: 12rem;
-    // width: 15rem;
-    // border-radius: 50%;
-    // object-fit: cover;
-    // object-position: center;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
   }
   .paragraph {
   }

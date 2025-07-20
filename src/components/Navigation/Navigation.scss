@@ -1,20 +1,25 @@
+@use '../../constants.scss';
+
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: lightgray;
+  background-color: constants.$secondary-color;
   height: 4rem;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: solid constants.$primary-color 0.1rem;
   img {
     height: 7rem;
-    z-index: 999;
-    border: solid lightgray 0.2rem;
+    border: solid constants.$secondary-color 0.2rem;
   }
   a {
-    color: black;
+    color: constants.$black;
     text-decoration: none;
     &.active,
     :hover {
-      color: darkgoldenrod;
+      color: constants.$complimentary-color;
       text-decoration: underline;
     }
   }

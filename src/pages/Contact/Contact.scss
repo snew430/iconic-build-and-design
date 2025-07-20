@@ -1,0 +1,31 @@
+@use '../../constants.scss';
+
+main {
+  .columns {
+    display: flex;
+
+    .contact-details,
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      align-items: center;
+    }
+
+    .contact-details {
+      background-color: constants.$primary-color;
+      color: constants.$white;
+      ul {
+        list-style-type: none;
+        li {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+        }
+      }
+    }
+
+    .contact-form {
+    }
+  }
+}

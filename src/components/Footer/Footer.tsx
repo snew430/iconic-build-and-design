@@ -8,10 +8,10 @@ export const Footer = () => {
     <footer>
       <img src={logo} alt='logo' />
       <div className='social-logos'>
-        <FaInstagram />
-        <FaFacebook />
-        <FaYelp />
-        <FaXTwitter />
+        <FaInstagram size='2em' />
+        <FaFacebook size='2em' />
+        <FaYelp size='2em' />
+        <FaXTwitter size='2em' />
       </div>
     </footer>
   );

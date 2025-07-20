@@ -7,18 +7,9 @@ interface PicParagraphProps {
 }
 export const PicParagraph = ({ children, picPosition, pic }: PicParagraphProps) => {
   return (
-    <div className='pic-paragraph'>
-      {picPosition === 'leading' && (
-        <div className='circle'>
-          <img className='pic' src={pic}></img>
-        </div>
-      )}
+    <div className={`pic-paragraph ${picPosition === 'trailing' ? 'trailing' : ''}`}>
+      <img className='pic' src={pic}></img>
       <p className='paragraph'>{children}</p>
-      {picPosition === 'trailing' && (
-        <div className='circle'>
-          <img className='pic' src={pic}></img>
-        </div>
-      )}
     </div>
   );
 };
